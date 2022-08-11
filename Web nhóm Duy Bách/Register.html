@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản lý tài khoản</title>
+    <link href="./images/icon.png" rel="icon">
+</head>
+<style>
+    #box{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: white;
+            width: 600px;
+            height: 550px;
+            position: relative;
+            transform: translateX(-50%);
+            padding: 10px;
+            margin-left: 50%;
+            border-style: solid;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 14px;
+            border-width: 1px;
+            border-color: rgba(0, 0, 0, 0.295);
+            margin-top: -17px;
+    }
+    .login{
+        text-align: center;
+       
+    }
+    .login input[type="email"], .login input[type="text"], .login input[type="Password"], .login input[type="Phone"] .login button {
+    padding: 10px;
+    line-height: 25px;
+    font-size: 17px;
+    width: 60%;
+    border-radius: 10px 10px 10px 10px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.295);
+    height: auto;
+    margin-top: 10px;
+    }
+    .login button[type="submit"]{
+        font-size: 20px;
+        background-color: rgb(52, 137, 248);
+        color: white;
+        width: 30%;
+        height: 50px;
+        border-radius: 10px 10px 10px 10px;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.295);
+        cursor: pointer;
+  
+    }
+    .login button[type="submit"]:hover{
+        background-color: blue;
+    }
+   
+    .login button[type="submit1"]{
+        font-size: 20px;
+        background-color: rgb(4, 0, 255);
+        color: white;
+        width: 50%;
+        border-radius: 10px 10px 10px 10px;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.295);
+        cursor: pointer;
+        height: 50px;
+    }
+    .login button[type="submit1"]:hover{
+        background-color: rgb(3, 3, 161);
+    }
+    .login p{
+        margin-top: 20px;
+    }
+    .home{
+        cursor: pointer;
+       
+    }
+    .home:hover{
+        background-color: rgb(253, 219, 28);
+    }
+
+</style>
+<body background="https://phunugioi.com/wp-content/uploads/2020/02/mau-background-dep.jpg">
+    <button class="home"> <a  style="text-decoration: none" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house-heart" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207l-5-5-5 5V13.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7.207Zm-5-.225C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z"/>
+      </svg></a></button>
+    <div id="box" class="login">
+        <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+        <form >
+            <div>
+                <input type="text" name="Username" id="Username"placeholder="Họ và tên">
+                <input type="email" name="Email" id="Email"placeholder="Email">
+                <input type="text" name="Phone" id="Phone"placeholder="Số điện thoại">
+                <input type="password" name="Password" id="Password" placeholder="Mật khẩu, lớn hơn 6 ký tự">
+                <br>
+                <br>
+                <button type="submit">Đăng ký</button>
+                <p>Hoặc</p>
+                
+                <button type="submit1"> Đăng nhập bằng Facebook</button>
+                   <p>Bạn đã có tài khoản?</p>
+                   <span> <a href="login.html">Đăng nhập</a></span>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

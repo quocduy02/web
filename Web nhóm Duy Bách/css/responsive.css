@@ -1,0 +1,508 @@
+
+
+/************* Responsive PC, Laptop ******************/
+
+@media (min-width: 1200px) {
+  .row {
+    margin-left: -30px;
+    *zoom: 1;
+  }
+  .navbar-inner {
+    position: fixed;
+    margin-top: -5px;
+    width: 100%;
+    height: 70px;
+    z-index:1000;
+  }
+  .nav-pills {
+    margin-bottom: 30px;
+  }
+  .nav-pills > li > a {
+      background: transparent;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      margin-right:5px;
+      padding-left:25px;
+      padding-right:25px;
+      border: 1px solid #181A1C;
+  }
+  .nav-pills > li > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+      background: #181A1C;
+      color: #fff;
+  }
+  .navbar-inner  #tools .shop{
+    margin-left: 95%;
+
+  }
+  .thumbnail ion-icon{
+    font-size: 2em;
+  }
+  .da-slide .da-img img{
+    margin-top: 25px;
+    width: 420px;
+    height: 300px;
+  }
+  .da-slide p{
+    font-size: 19px;
+    margin-top: -5px;
+  }
+   
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 1170px;
+  }
+  .span12 {
+    width: 1170px;
+  }
+  .span11 {
+    width: 1070px;
+  }
+  .span10 {
+    width: 970px;
+  }
+  .span9 {
+    width: 870px;
+  }
+  .span8 {
+    width: 770px;
+  }
+  .span7 {
+    width: 670px;
+  }
+  .span6 {
+    width: 570px;
+  }
+  .span5 {
+    width: 470px;
+  }
+  .span4 {
+    width: 370px;
+  }
+  .span3 {
+    width: 270px;
+  }
+  .span2 {
+    width: 170px;
+  }
+  .span1 {
+    width: 70px;
+  }
+  .thumbnails {
+    margin-left: -30px;
+  }
+  .thumbnails > li {
+    margin-left: 30px;
+  }
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+  .contact-form1 .span5{
+    width: 95%;
+  }
+  .contact-form1 button{
+    width: 40%;
+  }
+  .thumbnail {
+    margin-top: 10px;
+  }
+  .span4 .thumbnail h3{
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .span4 .thumbnail p{
+    font-size: 16px;
+    margin-top: 15px;
+    padding-bottom: -20px;
+  }
+  .container .testimonial-text  {
+    margin-top: 250px;
+  }
+  .thumbnail ul {
+    margin-top: 20px;
+  }
+  .container .contact-form1{
+    margin-bottom: 20px;
+  }
+  
+}
+
+
+/************* Responsive Tablet ******************/
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .row {
+    margin-left: -20px;
+    *zoom: 1;
+  }
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .nav-collapse {
+    clear: both;
+  }
+  .nav-collapse .nav {
+    float: none;
+  }
+  .nav-collapse .nav > li {
+    color: #000;
+    float: none;
+  }
+  .navbar .container {
+    width: auto;
+    padding: 0;
+  }
+  .navbar .btn-navbar {
+    display: block;
+    
+  }
+  .nav-collapse,
+  .nav-collapse.collapse {
+    height: 0;
+    overflow: hidden;
+  }
+  .navbar-inner {
+    position: fixed;
+    margin-top: -5px;
+    width: 95%;
+    height: 70px;
+    z-index:1000;
+  }
+  .nav-collapse, .nav-collapse .collapse {
+    background-color:#181A1C;
+    width: 100%;
+    margin-top: -18px;
+    text-align: center;
+  }
+  .da-slide a.da-link.button {
+    margin-top: 20px;
+  }
+  .da-slide h4 {
+    margin-top: 45px;
+    margin-left: -30px;
+  }
+  .da-slide h2 {
+    margin-top: 50px;
+    margin-left: -30px;
+  }
+  .da-slide p {
+    margin-top: 40px;
+  }
+  .nav-pills {
+    margin-bottom: 35px;
+  }
+  .nav-pills > li > a {
+    background: transparent;
+    border-radius: 0;
+    margin-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #181a1c;
+  }
+  .nav-pills > li > a:hover,
+  .nav-pills > .active > a,
+  .nav-pills > .active > a:hover,
+  .nav-pills > .active > a:focus {
+    background: #181a1c;
+    color: #fff;
+  }
+  .navbar-inner #tools .shop {
+    margin-left: 95%;
+  }
+ 
+  
+  .thumbnail .social li {
+    font-size: 1em;
+  }
+
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 724px;
+  }
+  .span12 {
+    width: 724px;
+  }
+  .span11 {
+    width: 662px;
+  }
+  .span10 {
+    width: 600px;
+  }
+  .span9 {
+    width: 538px;
+  }
+  .span8 {
+    width: 476px;
+  }
+  .span7 {
+    width: 414px;
+  }
+  .span6 {
+    width: 352px;
+  }
+  .span5 {
+    width: 290px;
+  }
+  .span4 {
+    width: 228px;
+  }
+  .span3 {
+    width: 166px;
+  }
+  .span2 {
+    width: 104px;
+  }
+  .span1 {
+    width: 42px;
+  }
+  .row-fluid h3 {
+    font-size: 20px;
+  }
+  .row-fluid p {
+    font-size: 13.5px;
+  }
+  .row-fluid .thumbnail h3 {
+    font-size: 17px;
+  }
+  .team .thumbnail .mask h4 b {
+    margin-left: -10px;
+    text-align: center;
+    font-size: 17px;
+  }
+  .span4 .thumbnail a ion-icon {
+    margin-left: -5px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 1.4em;
+  }
+  .span4 .thumbnail h3 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .span4 .thumbnail p {
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: -15px;
+  }
+  .span4 .thumbnail ion-icon {
+    margin-left: -5px;
+    font-size: 20px;
+  }
+  .project-description .project-title {
+    margin-bottom: -8px;
+    margin-top: -10px;
+  }
+  .project-description .project-title h3 {
+    margin-top: 25px;
+    margin-bottom: -5px;
+    font-size: 20px;
+  }
+  .project-description .project-title .show_hide {
+    margin-top: 25px;
+    margin-bottom: -10px;
+  }
+  .project-description .project-info {
+    line-height: 13px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .project-description p {
+    line-height: 13px;
+    margin-top: -15px;
+    margin-bottom: -5px;
+    font-size: 12px;
+  }
+  .project-description button {
+    margin-top: -20px;
+    font-size: 12px;
+  }
+  .span6 img {
+    height: 210;
+    margin-bottom: -3.5px;
+  }
+  .container .testimonial-text {
+    margin-top: 250px;
+  }
+  .thumbnail ul {
+    margin-top: 1px;
+  }
+  .container .contact-form1 {
+    margin-bottom: 20px;
+  }
+  .row-fluid .price-column h3 {
+    font-size: 27px;
+  }
+  .contact-form1 .span5 {
+    width: 95%;
+  }
+  .container .contact-form1 {
+    width: 55%;
+  }
+
+}
+
+
+/************* Responsive Mobile ******************/
+
+@media (max-width: 480px) {
+  .logo{
+    display: none;
+  }
+  
+  .navbar-inner {
+    position: fixed;
+    margin-top: -5px;
+    width: 93%;
+    height: 70px;
+    z-index:1000;
+  }
+  .nav-collapse, .nav-collapse .collapse {
+    background-color:#181A1C;
+    width: 104%;
+    margin-top: -7px;
+    text-align: center;
+  }
+  .navbar-inner #tools{
+    margin-top: 65px;
+    margin-bottom: -50px;
+    margin-left: 40px;
+    width: 200px;
+}
+  .navbar-inner  #tools .search-box{
+    margin-left: -50px;
+    width: 175px;
+  }
+  .navbar-inner  #tools .search-box button{
+      margin-left: -175px;
+      margin-top: 2px;
+  }
+  .navbar-inner  #tools .search-box .search-text{
+    width: 170px;
+  }
+  .navbar-inner  #tools .shop{
+    display: list-item;
+    margin-top: -40px;
+    margin-bottom: 3px;
+    margin-left: 90%;
+
+  }
+  .navbar-inner .btn-navbar{
+    margin-top: -20px;
+  }
+  .navbar .btn-navbar {
+    display: block;
+  }
+  .nav-collapse,
+  .nav-collapse.collapse {
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-pills {
+    margin-bottom: 30px;
+  }
+  .nav-pills > li > a {
+      background: transparent;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      margin-right:5.3px;
+      padding-left:9px;
+      padding-right:9px;
+      border: 1px solid #181A1C;
+  }
+  .nav-pills > li > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+      background: #181A1C;
+      color: #fff;
+  }
+  .contact-form1 .span5{
+    width: 93%;
+  }
+  .container .contact-form1{
+    width: 85%;
+  }
+  .contact-form1 button{
+    width: 57%;
+  }
+  .container .end_intro ul{
+    margin-left: 65px;
+  }
+  .container .end_intro ul li{
+      margin-top: 10px;
+  }
+  .container .end_intro h4{
+      margin-top: 30px;
+  }
+  .container .end_intro li  span{
+    margin-left: -20px;
+  }   
+  .container .end_intro li a span{
+    margin-left: -90px;
+  }
+  .span4 .thumbnail h3 {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .span4 .thumbnail p {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+  .thumbnail ion-icon{
+    margin-left: -20px;
+    margin-top: -25px;
+    font-size: 2em;
+  }
+  .thumbnail ul {
+    margin-top: 20px;
+  } 
+  .container {
+    width: auto;
+  }
+  .row-fluid {
+    width: 100%;
+  }
+  .row,
+  .thumbnails {
+    margin-left: 0;
+  }
+  .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+  [class*="span"],
+  .uneditable-input[class*="span"],
+  .row-fluid [class*="span"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .title h1{
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+

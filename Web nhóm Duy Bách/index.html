@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Khóa học online</title>
+  
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+     
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        
+        <link href="./images/icon.png" rel="icon">
+    </head>
+    
+    <body>
+        <section id = "shopping" class="block_list-item">
+            <div class="icon-x-style">
+                <!--them dong-->
+                   <ion-icon name="close-outline"  onclick="displayOff()" ></ion-icon>
+            </div>
+                <h1 style="text-align: center; color: black;">Giỏ Hàng</h1>
+                <p class="sumprice">Tổng tiền: <i id="displaysumprice"></i></p>
+            <form action="">
+                <table>
+                    <thead class="shop-style">
+                        <div style="color: black;">
+                            <tr>
+                                <td><b style="margin-right:30px; margin-left: 17px;">Sản phẩm</b></td>
+                                <td><b style="margin-right: 30px;margin-left: 20px">Đơn Giá</b></td>
+                                <td><b style="margin-left: 5px;">Thao Tác</b></td>
+                            </tr>
+                        </div>
+                    </thead>
+                    <br>
+                    <tbody id="product"  style="color: black;">
+                        <!--Add product-->
+                    </tbody>
+                </table>
+                
+            </form>
+        </section>
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="brand">
+                        <!-- logo Website -->
+                        <img class="logo" src="images/logo.png" width="120" height="40" alt="Logo" />
+                        </div>
+                        <div id="tools">
+                            <ion-icon  class="shop" name="cart-outline"  onclick="displayOn()" ></ion-icon>
+                       <form action="" class="search-box">
+                        <input type="search" name="" class="search-text"value placeholder="Tìm kiếm khóa học">
+                        <button>
+                           <ion-icon name = "search-outline"> </ion-icon>
+                           </button>
+                          
+                        </form>
+                      
+                      </div>
+                    <!-- Navigation button, responsive -->
+                    <button type="button" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <ion-icon name = "menu-outline"> </ion-icon>
+                    </button>
+                    <!-- Main navigation -->
+                      <div class="nav-collapse collapse pull-right">
+                            <ul class="nav" id="top-navigation">
+                                <li><a href="login.html">ĐĂNG NHẬP <ion-icon  style="font-size: 15px;"name="person-circle-outline"></ion-icon></a> </li>
+                                <li class="active"><a href="#home">TRANG CHỦ</a></li>
+                                <li><a href="#portfolio">KHÓA HỌC</a></li>
+                                <li><a href="#price">GIÁ BÁN</a></li>   
+                            </ul>
+                        </div>   
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Start home section -->
+        <div id="home">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2">Chào mừng bạn đến Website</h2>
+                        <h4>Hiện đại & bổ ích</h4>
+                        <p style="color: rgb(0, 0, 0);">Tại đây chúng tôi đã tạo ra trang web mục đích chính là cung cấp cho người dùng những khóa học liên quan đến ngành Công nghệ Thông Tin và các kỹ năng cần thiết đối với dân IT.</p>
+                        <a href="#" class="da-link button">Đọc thêm</a>
+                        <div class="da-img">
+                            <img src="images/Slider01.png" alt="image01" width="320">
+                        </div>
+                    </div>
+                    <!-- End first slide -->
+                    <!-- Start second slide -->
+                    <div class="da-slide">
+                        <h2>Dễ dàng quản lý</h2>
+                        <h4>Dễ sử dụng</h4>
+                        <p style="color: rgb(0, 0, 0);">Webtise này được tạo ra dựa trên tiêu chí giúp người dùng dễ dàng sử dụng cũng như học tập tại đây, chúng tôi  sẽ luôn khắc phục và update để tối ưu Website ngày một hoàn thiện và tốt nhất.</p>
+                        <a href="#" class="da-link button">Đọc thêm</a>
+                        <div class="da-img">
+                            <img src="images/Slider02.png" width="320" alt="image02">
+                        </div>
+                    </div>
+                    <!-- End second slide -->
+                    <!-- Start third slide -->
+                    <div class="da-slide">
+                        <h2>Cách mạng 4.0 hóa</h2>
+                        <h4>Tiện ích & Tối ưu</h4>
+                        <p style="color: rgb(0, 0, 0);">Với sự phát triển của công nghệ, vì thế chúng tôi luôn cập nhật và gửi đến người dùng các khóa học mới và tốt nhất nhằm đáp ứng nhu cầu học tập và nâng cao kỹ năng của người dùng hiện nay.</p>
+                        <a href="#" class="da-link button">Đọc thêm</a>
+                        <div class="da-img">
+                            <img src="images/Slider03.png" width="320" alt="image03">
+                        </div>
+                    </div>
+                    <!-- Start third slide -->
+                   
+                </div>
+            </div>
+        </div>
+        <!-- End home section -->
+        <!-- Service section start -->
+        <div class="section primary-section" id="service">
+            <div class="container">
+                <!-- Start title section -->
+                <div class="title">
+                    <h1>Bạn sẽ nhận được gì từ các khóa học?</h1>
+                    <!-- Section's title goes here -->
+                    <p>Chúng tôi sẽ luôn mang đến cho bạn những khóa học về kiến thức cũng như kỹ năng bổ ích và phù hợp nhất đối với bạn.</p>
+                    <!--Simple description for section goes here. -->
+                </div>
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service1.png" alt="service 1">
+                            </div>
+                            <h3>Thiết kế hiện đại</h3>
+                            <p>Chúng tôi sẽ giúp bạn rèn luyện và nâng cao khả năng tư duy thiết kế hiện đại và chuyên nghiệp.</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service2.png" alt="service 2" />
+                            </div>
+                            <h3>Khả năng sáng tạo</h3>
+                            <p>Chúng tôi luôn hướng bạn nâng cao khả năng giá trị sáng tạo trong học tập cũng như công việc.</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service3.png" alt="service 3">
+                            </div>
+                            <h3>Tư duy lập trình</h3>
+                            <p>Chúng tôi sẽ mang đến nguồn kiến thức, tài liệu để giúp bạn cải thiện khả năng lập trình của mình.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service section end -->
+        <!-- Portfolio section start -->
+        <div class="section secondary-section " id="portfolio">
+            
+            <div class="container">
+                <div class=" title">
+                    <h1>Bạn đang cần khóa học như thế nào?</h1>
+                    <p>Những khóa học chúng tôi cung cấp rất đa dạng và phong phú để cho bạn lựa chọn khóa học phù hợp với bản thân.</p>
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#noAction">Tất cả</a>
+                    </li>
+                    <li class="filter" data-filter="web">
+                        <a href="#noAction">Lập trình</a>
+                    </li>
+                    <li class="filter" data-filter="photo">
+                        <a href="#noAction">Website</a>
+                    </li>
+                    <li class="filter" data-filter="identity">
+                        <a href="#noAction">Kỹ năng</a>
+                    </li>
+                </ul>
+                <!-- Start details for portfolio project 1 -->
+                <div id="single-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio01.png" alt="project 1" />
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học C++ cơ bản</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>20 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>80</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                   
+                                </div>
+                                <p>Khóa học lập trình C++ dành cho người mới bắt đầu, khóa học này dạy bạn những kiến thức cơ bản về ngôn ngữ lập trình C++.</p>
+                                <button class="addproduct" value="0">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 1 -->
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio02.png" alt="project 2">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học HTML & CSS</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>22 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>76</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Khóa học cung cấp những kiến thức cơ bản về HTML/CSS.Kết thúc khóa học bạn có thể tạo được các giao diện đơn giản.</p>
+                                <button class="addproduct" value="1">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio03.png" alt="project 3">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học Photoshop</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>16 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ</span>70</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Khóa học này cung cấp kiến thức từ cơ bản đến nâng cao cách sử dụng PS, các thao tác thực hiện trong quá trình sử dụng.</p>
+                                <button class="addproduct" value="2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio04.png" alt="project 4">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học Python cơ bản</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>21 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>65</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Khóa học này được tạo cho người mới bắt đầu và sẽ dạy bạn các nguyên tắc cơ bản về lập trình Python và xây dựng các dự án.</p>
+                                <button class="addproduct" value="3">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio05.png" alt="project 5">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học Laravel</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>19 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>72</div>
+                                    <div>
+                                        <span>GIải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Khóa học chuyên về Laravel PHP Framework được xây dựng và hệ thống từ những kiến thức nền tảng cơ bản đến chuyên sâu.</p>
+                                <button class="addproduct" value="4">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 6 -->
+                    <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio06.png" alt="project 6">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học Tiếng Anh giao tiếp</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>20 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>75</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Khóa học này hướng dẫn và hỗ trợ bạn về giao tiếp Tiếng Anh từ cơ bản đến nâng cao và cải thiện Tiếng Anh toàn diện.</p>
+                                <button class="addproduct" value="5">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 6 -->
+                    <!-- Start details for portfolio project 7 -->
+                    <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio07.png" alt="project 7">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học Java cơ bản</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span> 26 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>83</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Tìm hiểu cơ bản về ngôn ngữ Java thông qua các tác vụ mã hóa tương tác.Các bạn sẽ có được kinh nghiệm viết, biên dịch chương trình Java. </p>
+                                <button class="addproduct" value="6">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 7 -->
+                    <!-- Start details for portfolio project 8 -->
+                    <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio08.png" alt="project 8">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học JavaScript</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>26 giờ</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>68</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Giúp các bạn nắm vững các kiến thức cơ bản và cú pháp trong JavaScript- ngôn ngữ lập trình phổ biến nhất trên thế giới.</p>
+                                <button class="addproduct" value="7">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 8 -->
+                    <!-- Start details for portfolio project 9 -->
+                    <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio09.png" alt="project 9">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Khóa học Tin học văn phòng</h3>
+                                    <span class="show_hide close">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Đối tượng:</span>Học sinh, Sinh viên</div>
+                                    <div>
+                                        <span>Thời gian:</span>17</div>
+                                    <div>
+                                        <span>Số nhiệm vụ:</span>69</div>
+                                    <div>
+                                        <span>Giải thưởng:</span>Giấy chứng nhận</div>
+                                </div>
+                                <p>Khóa học giúp nâng cao kỹ năng sử dụng các phần mềm thông dụng của Office như Word, Excel, Powerpoint, kèm bài tập thực hành. </p>
+                                <button class="addproduct" value="8">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 9 -->
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio01.png" alt="project 1">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học C++ cơ bản</h3>
+                                <p>Giới thiệu và làm quen với ngôn ngữ C++</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio02.png" alt="project 2">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học HTML & CSS</h3>
+                                <p>Giới thiệu các thuộc tính trong HTML và CSS </p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio03.png" alt="project 3">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học Photoshop</h3>
+                                <p>Hướng dẫn cách sử dụng các chức năng PS</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio04.png" alt="project 4">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học Python cơ bản</h3>
+                                <p>Giới thiệu và làm quen với ngôn ngữ Python</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio05.png" alt="project 5">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                    <ion-icon  class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học Laravel</h3>
+                                <p>Giới thiệu các thuộc tính trong Laravel</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio06.png" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học Tiếng Anh Giao tiếp</h3>
+                                <p>Giới thiệu và hỗ trợ giao tiếp trong thực tế</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio07.png" alt="project 7" />
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học Java cơ bản</h3>
+                                <p>Giới thiệu và làm quen với ngôn ngữ Java</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio08.png" alt="project 8">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học JavaScript </h3>
+                                <p>Giới thiệu các thuộc tính trong JavaScript </p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio09.png" alt="project 9">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
+                                    <ion-icon class="add-circle-outline" name="add-circle-outline"></ion-icon>
+                                </a>
+                                <h3>Khóa học Tin học văn phòng</h3>
+                                <p>Giới thiệu và bài tập luyện thao tác</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio section end -->
+        <!-- About us section start -->
+        <div class="section primary-section" id="about">
+           
+            <div class="container">
+                <div class="title">
+                    <h1>Giảng viên tiêu biểu</h1>
+                    <p>Đây là những người nổi tiếng và chất lượng chuyên đào tạo ra những học viên ưu tú trong thời gian qua. </p>
+                </div>
+                <div class="row-fluid team">
+                    <div class="span4" id="first-person">
+                        <div class="thumbnail">
+                            <img src="images/Team1.png" alt="team 1">
+                            <h3>Lưu Trường Hải Lân</h3>
+                            <ul class="social">
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h4><b>Chuyên viên lập trình</b></h4>
+                                <p>Đây là người đã có nhiều năm kinh nghiệm về lập trình, hiện tại đang cho ra những khóa học bổ ích và tốt nhất đến người học.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="second-person">
+                        <div class="thumbnail">
+                            <img src="images/Team2.png" alt="team 1">
+                            <h3>Huy Quần Hoa</h3>
+                            <ul class="social">
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h4><b>Chuyên viên thiết kế</b></h4>
+                                <p>Đây có thể coi là người đào tạo học viên có giỏi về mảng Photoshop với những tác phẩm chất lượng đã cho ra mắt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="third-person">
+                        <div class="thumbnail">
+                            <img src="images/Team3.png" alt="team 1">
+                            <h3>Nguyễn Thị Huyền Trang</h3>
+                            <ul class="social">
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h4><b>Chuyên viên Tiếng Anh</b></h4>
+                                <p>Đây là người dạy Tiếng Anh khá tốt cũng là một giáo viên vui tính, thân thiện với học viên.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h3>Kỹ năng hướng đến</h3>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <ul class="skills">
+                            <li>
+                                <span class="bar" data-width="80%"></span>
+                                <p>Tiếng anh giao tiếp</p>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="95%"></span>
+                                <p>Khả năng lập trình</p>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="75%"></span>
+                                <p>Tin học văn phòng</p>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="85%"></span>
+                                <p>Khả năng thiết kế</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span6">
+                        <div class="highlighted-box center">
+                            <a>Tham gia cùng chúng tôi</a>
+                           <hr style="margin-bottom: -12px">
+                            <p>Khi học tại trang Web này bạn sẽ nhận được rất nhiều điều bổ ích từ kiến thức chuyên môn của ngành CNTT hay là những kỹ năng cần thiết và chúng tôi luôn luôn mang đến những khóa học tốt và chất lượng nhất đến cho bạn.</p>
+                            <button class="button button-sp">Đăng ký ngay!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client section start -->
+        <div id="clients">
+            <div class="section secondary-section">
+                
+                <div class="container">
+                    <div class="title">
+                        <h1>Người dùng nghĩ gì về các khóa học?</h1>
+                        <p>Cảm nhận của khách hàng sau khi trải nghiệm các khóa học tại HoclamIT.</p>
+                    </div>
+                    <div class="row">
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"Tôi nghĩ đây là trang web đầu tư chất lượng nội dung của từng khóa học khá tốt."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/Client1.png" class="centered" alt="client 1">
+                                    <strong>Hoang Nguyen
+                                        <small>Học viên</small> 
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"Cấu trúc bài giảng logic hợp lý tuy nhiên có 1 số khóa học dành cho người mới bắt đầu hơi khó chút."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/Client2.png" class="centered" alt="client 2">
+                                    <strong>Huong Lan
+                                        <small>Học viên</small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"Khóa học phù hợp với học viên muốn học về kỹ năng, nội dung chặt chẽ bám sát kiến thức chung."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/Client3.png" class="centered" alt="client 3">
+                                    <strong>Dinh Cong 
+                                        <small>Học viên</small> 
+                                    </strong>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Sự hoàn hảo đạt được không phải khi không còn gì để bổ sung, mà là khi không còn gì để loại bỏ đi."
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Price section start -->
+        <div id="price" class="section primary-section">
+            <div class="container">
+                <div class="title">
+                    <h1>Giá bán hợp lý không?</h1>
+                    <p>Dưới đây chúng tôi có các gói combo hỗ trợ cho người dùng có thể thoải mái lựa chọn gói phù hợp.</p>
+                </div>
+                <div class="price-table row-fluid">
+                    <div class="span4 price-column">
+                        <h3>Gói Đơn</h3>
+                        <ul class="list">
+                            <li class="price">299.000đ</li>
+                            <li>Sử dụng<strong> Trọn đời</strong> </li>
+                            <li>Hỗ trợ<strong> 24/7</strong></li>
+                            <li><strong>Không giới hạn </strong>thời gian</li>
+                        </ul>
+                        <a href="#" class="button button-ps">Mua ngay</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3>Gói Combo 1</h3>
+                        <ul class="list">
+                            <li class="price">569.000đ</li>
+                            <li>Sử dụng<strong> Trọn đời</strong> </li>
+                            <li>Hỗ trợ<strong> 24/7</strong></li>
+                            <li><strong>Không giới hạn </strong>thời gian</li>
+                        </ul>
+                        <a href="#" class="button button-ps">Mua ngay</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3>Gói combo 2</h3>
+                        <ul class="list">
+                            <li class="price">869.000đ</li>
+                            <li>Sử dụng<strong> Trọn đời</strong> </li>
+                            <li>Hỗ trợ<strong> 24/7</strong></li>
+                            <li><strong>Không giới hạn </strong>thời gian</li>
+                        </ul>
+                        <a href="#" class="button button-ps">Mua ngay</a>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <!-- Price section end -->
+       
+        <!-- Contact section start -->
+        <div id="contact" class="contact">
+            <div class="section secondary-section">
+                <div class="container">
+                    <div class="title">
+                        <h1>Gửi đánh giá tại đây!</h1>
+                    </div>
+                </div>
+                    <div class="container">
+                    
+                          <form  class="contact-form1">
+                                    <div class="">
+                                        <div class="">
+                                            <input class="span5" type="text" id="name" name="name" placeholder="* Nhập họ tên..." />
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="">
+                                            <input class="span5" type="email" name="email" id="email" placeholder="* Nhập email..." />
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="">
+                                            <textarea class="span5" name="comment" id="comment" placeholder="* Lời nhận xét..."></textarea>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button  type="submit" class="message-btn"><b>Gửi phản hồi</b></button>
+                                        </div>
+                                    </div>
+                            </form>
+                    </div>
+                
+            <div class="container">
+                <div class="end_intro">   
+                        <ul class="list_1">
+                            <h4 class="" >Thông tin về HoclamIT </h4>
+                            <hr>
+                            <li><q href="#">Danh sách khóa học</q></li>
+                            <li><q href="#">Câu hỏi thường gặp</q></li>
+                            <li><q href="#">Cách thanh toán học phí</q></li>
+                            <li><q href="#">Kích hoạt khóa học</q></li>
+                            
+                        </ul>
+                        <ul class="list_2">
+                            <h4 class="">Hợp tác liên kết</h4>
+                            <hr>
+                            <li><q href="#">Đăng ký giảng viên</q></li>
+                            <li><q href="#"></q>Đào tạo doanh nghiệp</li>
+                            <li><q href="#"></q>Giải pháp E-learning</li>
+                            <li><q href="#"></q>Affiliate</li>
+                        </ul>
+                        <ul class="list_3">
+                            <h4 class="">Trung tâm trợ giúp</h4>
+                            <hr>
+                            <li>
+                                <span> <ion-icon name="call-outline"></ion-icon> </span>  <q href="#"> +84 793 553 033</q> 
+                            </li>
+                            <li>
+                                <span><ion-icon name="mail-outline"></ion-icon> </span>  <q href="#"> support@gmail.com</q> 
+                            </li>
+                            <li>
+                                <span><ion-icon name="id-card-outline"></ion-icon></span>  <q href="#"> IT_cungnhau_phattrien</q> 
+                            </li>
+                            <li>
+                                <span><ion-icon name="alarm-outline"></ion-icon> </span>  <q href="#"> 7:00 - 22:00</q> 
+                            </li>
+                            
+                            
+                        </ul>
+                        <hr style="margin-bottom: -2px;">
+                        <div class="row-fluid centered">
+                           
+                                <ul class="social">
+                                    <li>
+                                        <a>
+                                            <span ><ion-icon name="logo-facebook"></ion-icon></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span ><ion-icon name="logo-instagram"></ion-icon></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span ><ion-icon name="logo-twitter"></ion-icon></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span ><ion-icon name="logo-linkedin"></ion-icon></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+             </div>  
+        </div>
+    </div>  
+</div>    
+        <!-- Contact section edn -->
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>&copy; 2022 Design by <a href="https://www.facebook.com/quocduy.nguyen.7165/">Quốc Duy</a> and <a href="https://www.facebook.com/profile.php?id=100077443287386">Đăng Bách</a></p>
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <ion-icon name="arrow-up-outline"></ion-icon>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <script src="js/script.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+
+        <!--Bootrap Icons-->
+        <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+        <script  nomodule  src = "https: // unkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js "> </script>   
+        
+    </body>
+</html>
